@@ -1,0 +1,26 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Barra de Progresso */
+#nprogress .bar {
+  background: #ffbc00;
+  height: 3px;
+}
+
+#nprogress .spinner-icon {
+  width: 30px;
+  height: 30px;
+  border-top-color: #ffbc00;
+  border-left-color: #ffbc00;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ffbc00, 0 0 5px #ffbc00;
+}
+
+code {
+  @apply font-sans bg-gray-light px-2
+}
+
