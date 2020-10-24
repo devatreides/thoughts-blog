@@ -2,7 +2,9 @@
 slug: blog-two
 title: My Second Blog
 description: This Description Of My Second Blog.
-date: 25-September-2020
+author: Ramin Sayd
+date: 11 de Outubro de 2020
+contact: https://twitter.com/tongedev
 ---
 
 # h1

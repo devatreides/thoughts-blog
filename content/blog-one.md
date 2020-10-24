@@ -3,7 +3,9 @@
 slug: blog-one
 title: My First Blog
 description: This Description Of My First Blog.
-date: 25-September-2020
+author: Ruan DeLon
+date: 11 de Outubro de 2020
+contact: https://twitter.com/tongedev
 ---
 
 # h1

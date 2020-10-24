@@ -3,7 +3,8 @@ slug: coding-blog
 title: Coding blog
 author: Imran Irshad
 description: Coding Post For Beautiful Code
-date: 30-September-2020
+date: 11 de Outubro de 2020
+contact: https://twitter.com/tongedev
 ---
 
 # React Functional Component
