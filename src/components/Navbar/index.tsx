@@ -10,14 +10,7 @@ export default function Nav({ articleMetaData }) {
           <NavbarLink href="/">
             <FontAwesomeIcon icon={faAngleDoubleLeft} /> Voltar
           </NavbarLink>
-          <strong className="text-white">
-            {' '}
-            | Escrito por |{' '}
-            <NavbarLink href={articleMetaData.contact}>
-              {articleMetaData.author}
-            </NavbarLink>{' '}
-            em {articleMetaData.date}
-          </strong>
+          <strong className="text-white"> {articleMetaData.title}</strong>
         </ul>
       </div>
     </nav>
