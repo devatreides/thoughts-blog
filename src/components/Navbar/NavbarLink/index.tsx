@@ -14,7 +14,7 @@ export default function NavbarLink({ children, href }: NavbarLinkProps) {
         text-sm
         sm:text-base
         lg:text-lg
-        text-white"
+        text-accent-1"
       >
         {children}
       </a>
