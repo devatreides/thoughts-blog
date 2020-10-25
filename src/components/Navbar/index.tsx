@@ -4,7 +4,7 @@ import NavbarLink from './NavbarLink';
 
 export default function Nav({ articleMetaData }) {
   return (
-    <nav className="py-6 bg-purple-light-1">
+    <nav className="py-6 bg-sadgreen-light">
       <div className="container mx-auto flex justify-between items-center p-2 lg:px-6">
         <ul className="flex justify-between items-center space-x-4">
           <NavbarLink href="/">

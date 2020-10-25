@@ -9,18 +9,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#7B5BFB',
-        secondary: '#FFBC00',
-
         'accent-1': '#0CB2C0',
         'accent-1-darker': '#068792',
-        'accent-2': '#F725A0',
 
         purple: '#383193',
-        'purple-light-1': '#635DB6',
+        'purple-light-1': '#5d6e6e',
         'purple-light': '#A7A3DB',
         'purple-dark': '#201C57',
         'purple-darker': '#100C3C',
+
+        sadgreen: '#5C8271',
+        'sadgreen-dark': '#456155',
+        'sadgreen-light': '#8ABFA8',
+        'sadgreen-lighter': '#69E5AF',
+        'sadgreen-darker': '#2E4E40',
 
         gray: '#CAC5C4',
         'gray-dark': '#A09D9D',

@@ -20,6 +20,10 @@ html {
   box-shadow: 0 0 10px #ffbc00, 0 0 5px #ffbc00;
 }
 
+a:hover {
+  cursor:pointer;
+}
+
 code {
   @apply font-sans bg-gray-light px-2
 }
