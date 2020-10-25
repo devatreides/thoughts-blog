@@ -12,12 +12,6 @@ module.exports = {
         'accent-1': '#0CB2C0',
         'accent-1-darker': '#068792',
 
-        purple: '#383193',
-        'purple-light-1': '#5d6e6e',
-        'purple-light': '#A7A3DB',
-        'purple-dark': '#201C57',
-        'purple-darker': '#100C3C',
-
         sadgreen: '#5C8271',
         'sadgreen-dark': '#456155',
         'sadgreen-light': '#8ABFA8',
