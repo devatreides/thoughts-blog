@@ -71,12 +71,12 @@ const Index = ({ data, title, description }) => {
 export default Index;
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(`${process.cwd()}/src/content`, 'utf-8');
+  const files = fs.readdirSync(`${process.cwd()}/content`, 'utf-8');
 
   const blogs = files.filter((fn) => fn.endsWith('.md'));
   console.log(blogs);
   const data = blogs.map((blog) => {
-    const path = `${process.cwd()}/src/content/${blog}`;
+    const path = `${process.cwd()}/content/${blog}`;
     const rawContent = fs.readFileSync(path, {
       encoding: 'utf-8'
     });

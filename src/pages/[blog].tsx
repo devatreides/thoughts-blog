@@ -69,7 +69,7 @@ export default Blog;
 Blog.getInitialProps = async (context) => {
   const { blog } = context.query;
   // Import our .md file using the `slug` from the URL
-  const content = await import(`../content/${blog}.md`);
+  const content = await import(`../../content/${blog}.md`);
   const data = matter(content.default);
 
   return { ...data };
