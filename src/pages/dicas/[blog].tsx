@@ -37,7 +37,7 @@ const Blog = ({ content, data }) => {
       <Head>
         <title>{data.title}</title>
       </Head>
-      <Navbar hrefReturn="/programacao" articleMetaData={data} />
+      <Navbar hrefReturn="/dicas" articleMetaData={data} />
       <div className="flex flex-col justify-between py-8">
         <div className="py-10 px-2">
           <div className="mx-auto max-w-6xl px-8 border border-gray border-opacity-75 rounded-md shadow-md pt-6 pb-8 mb-4">
@@ -70,7 +70,7 @@ export default Blog;
 Blog.getInitialProps = async (context) => {
   const { blog } = context.query;
   // Import our .md file using the `slug` from the URL
-  const content = await import(`../../../content/programacao/${blog}.md`);
+  const content = await import(`../../../content/dicas/${blog}.md`);
   const data = matter(content.default);
   return { ...data };
 };
