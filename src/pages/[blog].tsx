@@ -39,7 +39,7 @@ const Blog = ({ content, data }) => {
       <Navbar articleMetaData={data} />
       <div className="bg-sadgreen-light flex flex-col min-h-screen justify-between">
         <div className="py-20 px-2">
-          <div className="mx-auto max-w-5xl bg-white bg-purple-700 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div className="mx-auto max-w-5xl bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h1 className="text-center text-2xl font-bold text-sadgreen-light mb-6 md:text-4xl lg:text-5xl">
               {frontmatter.title}
             </h1>
