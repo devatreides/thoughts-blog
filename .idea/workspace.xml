@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3188303-6356-4a6f-9158-d973595bb9b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/dicas/[blog].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dicas/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/games/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/programacao/[blog].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/programacao/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reflexoes/[blog].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reflexoes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog-one.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog-two.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/coding-blog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/shorthand-comparisons-in-php.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarLink/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarLink/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/[blog].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/games/[blog].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jOIogiUtX194GEME5kh377ZHIF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3188303-6356-4a6f-9158-d973595bb9b6" name="Default Changelist" comment="" />
+      <created>1603668903031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603668903031</updated>
+      <workItem from="1603668904328" duration="84000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="86" key="MergeDialog" timestamp="1603668986857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603668986857" />
+    <state x="588" y="281" key="MultipleFileMergeDialog" timestamp="1603668986872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="281" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603668986872" />
+  </component>
+</project>

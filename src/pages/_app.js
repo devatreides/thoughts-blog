@@ -11,7 +11,6 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
       <ToastContainer
         position="top-right"
         autoClose={6000}
@@ -22,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         closeOnClick
         pauseOnHover
       />
+      <Component {...pageProps} />
     </>
   );
 }

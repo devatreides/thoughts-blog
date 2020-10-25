@@ -20,7 +20,8 @@ module.exports = {
 
         gray: '#CAC5C4',
         'gray-dark': '#A09D9D',
-        'gray-light': '#EEEDED'
+        'gray-light': '#EEEDED',
+        'gray-lighter': '#F7FAF9'
       },
       fontFamily: {
         sans: 'Roboto',
