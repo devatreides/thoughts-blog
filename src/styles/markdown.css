@@ -5,19 +5,22 @@ html {
 
 /* Barra de Progresso */
 #nprogress .bar {
-  background: #ffbc00;
+  background: #69E5AF;
   height: 3px;
+  top: 0
+
 }
 
 #nprogress .spinner-icon {
   width: 30px;
   height: 30px;
-  border-top-color: #ffbc00;
-  border-left-color: #ffbc00;
+  border-top-color: #69E5AF;
+  border-left-color: #69E5AF;
 }
 
 #nprogress .peg {
-  box-shadow: 0 0 10px #ffbc00, 0 0 5px #ffbc00;
+  box-shadow: 0 0 10px #69E5AF, 0 0 5px #69E5AF;
+  position: fixed;
 }
 
 a:hover {

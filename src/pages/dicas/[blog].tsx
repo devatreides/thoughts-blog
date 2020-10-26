@@ -46,9 +46,29 @@ const Blog = ({ content, data }) => {
             <h3 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-2xl lg:text-3xl">
               {frontmatter.description}
             </h3>
-            <h3 className="text-lg font-bold text-black mb-6 md:text-md lg:text-lg">
-              Escrito por {frontmatter.author} em {frontmatter.date}
-            </h3>
+            <div className="border-gray shadow-lg">
+              {frontmatter.typeArticle === 'translate' ? (
+                <>
+                  <h3 className="text-lg font-bold text-black md:text-sm lg:text-sm">
+                    Traduzido por {frontmatter.author} em {frontmatter.date}
+                  </h3>
+                  <h3 className="text-lg font-bold text-black mb-6 md:text-sm lg:text-sm">
+                    Para acessar o artigo original,{' '}
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href={frontmatter.originalArticle}
+                    >
+                      clique aqui
+                    </a>
+                  </h3>
+                </>
+              ) : (
+                <h3 className="text-lg font-bold text-black md:text-sm lg:text-sm">
+                  Escrito por {frontmatter.author} em {frontmatter.date}
+                </h3>
+              )}
+            </div>
             <article className="prose prose-lg max-w-none">
               <ReactMarkdown
                 plugins={[gfm]}

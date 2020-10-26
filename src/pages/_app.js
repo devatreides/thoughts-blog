@@ -2,6 +2,9 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import { ToastContainer } from 'react-toastify';
 
+import 'nprogress/nprogress.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 import '../styles/index.css';
 
 Router.events.on('routeChangeStart', () => NProgress.start());

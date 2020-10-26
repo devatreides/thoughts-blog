@@ -6,7 +6,7 @@ author: Tom Benevides
 avatar: tom-benevides.jpg
 date: 27 de Outubro de 2020
 contact: https://twitter.com/tongedev
-dateOrder: 2020-10-25
+dateOrder: 2020-10-26
 typeArticle: translate
 originalArticle: https://stitcher.io/blog/why-light-themes-are-better-according-to-science
 originalAuthor: Brendt Roose

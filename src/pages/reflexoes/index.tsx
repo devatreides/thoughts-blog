@@ -8,7 +8,13 @@ import Navbar from '../../components/Navbar';
 
 const Reflexoes = ({ data, title }) => {
   const RealData = data.map((blog) => matter(blog));
-  const ListItems = RealData.map((listItem) => listItem.data);
+  let ListItems = RealData.map((listItem) => listItem.data);
+  ListItems = ListItems.sort((a, b) => {
+    const dateA = new Date(a.dateOrder);
+    const dateB = new Date(b.dateOrder);
+
+    return dateA.getTime() - dateB.getTime();
+  }).reverse();
 
   return (
     <>
