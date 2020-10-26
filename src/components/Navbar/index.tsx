@@ -8,7 +8,7 @@ export default function Nav({ hrefReturn, articleMetaData }) {
       <div className="container mx-auto flex justify-between items-center p-2 lg:px-6">
         <ul className="flex justify-between items-center space-x-4">
           <NavbarLink href={hrefReturn}>
-            <FontAwesomeIcon icon={faAngleDoubleLeft} /> Voltar
+            <FontAwesomeIcon size="sm" icon={faAngleDoubleLeft} /> Voltar
           </NavbarLink>
           <strong className="text-accent-1"> | {articleMetaData.title}</strong>
         </ul>
