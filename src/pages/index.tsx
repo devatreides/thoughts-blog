@@ -73,8 +73,8 @@ export default Index;
 export async function getStaticProps() {
   return {
     props: {
-      title: 'NextJS Blog',
-      description: 'A Simple Markdown Content NextJS Blog'
+      title: 'Blog - cogitare.press',
+      description: 'A simple blog to share knowledge'
     }
   };
 }

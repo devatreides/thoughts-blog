@@ -6,7 +6,7 @@ import fs from 'fs';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 
-const Reflexoes = ({ data, title, description }) => {
+const Reflexoes = ({ data, title }) => {
   const RealData = data.map((blog) => matter(blog));
   const ListItems = RealData.map((listItem) => listItem.data);
 
@@ -15,7 +15,6 @@ const Reflexoes = ({ data, title, description }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="Description" content={description}></meta>
         <title>{title}</title>
       </Head>
       <Navbar hrefReturn="/" articleMetaData={{ title: 'Reflexões' }} />
@@ -88,8 +87,7 @@ export async function getStaticProps() {
   return {
     props: {
       data: data,
-      title: 'NextJS Blog',
-      description: 'A Simple Markdown Content NextJS Blog'
+      title: 'Reflexões'
     }
   };
 }
