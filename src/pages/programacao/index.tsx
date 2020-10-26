@@ -31,7 +31,7 @@ const Programacao = ({ data, title }) => {
               <div
                 className="w-full md:w-1/4 h-40 rounded md:rounded"
                 style={{
-                  backgroundImage: `url('/images/image.png')`,
+                  backgroundImage: `url('/img/content/programacao/${blog.slug}/thumb.png')`,
                   backgroundSize: 'cover'
                 }}
               ></div>
@@ -49,7 +49,7 @@ const Programacao = ({ data, title }) => {
                 <div className="flex items-center">
                   <img
                     className="w-10 h-10 rounded-full mr-4"
-                    src="/avatar/profile.jpg"
+                    src={`/img/avatar/${blog.avatar}`}
                     alt="Avatar of Tom Benevides"
                   />
                   <div className="text-sm">

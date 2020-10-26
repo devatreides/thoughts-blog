@@ -22,6 +22,12 @@ html {
 
 a:hover {
   cursor:pointer;
+  color: #3182ce;
+}
+
+.underline {
+  text-decoration-color: red;
+  text-decoration: underline;
 }
 
 code {
