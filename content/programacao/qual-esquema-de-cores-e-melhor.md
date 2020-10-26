@@ -28,7 +28,7 @@ Você viu o efeito 3D? Talvez não funcionou bem em algumas partes do video e em
 > O efeito de Pulfrich é uma percepção psicofísica onde o movimento lateral de um objeto no campo de visão é interpretado pelo cortex visual como um componente que possui
 > profundidade, devido a uma diferença relativa nos tempos de sinal entre os dois olhos.
 
-Aliás, todas as fontes estão listadas em um bloco de texto, você vai encontrá-las no final desse post.
+Aliás, todas as fontes estão listadas em um bloco de referências, você vai encontrá-lo no final desse post.
 
 Para esclarecer, o efeito 3D no video é na verdade o seu cérebro te enganando; ele pensa que existe profundidade numa imagem plana porque há uma pequena diferença no tempo entre o seu olho esquerdo e o direito. Entretanto, o que é interessante é o que causa essa diferença no tempo entre os olhos. Pode adivinhar? É porque você cobriu um dos olhos com o óculos de sol. Acontece que imagens escuras levam mais tempo para serem processadas que imagens claras.
 
