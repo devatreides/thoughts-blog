@@ -19,7 +19,7 @@ Antes de olhar a teoria, pegue um par de óculos de sol se você tiver algum jog
 
 Com tudo pronto, se divirta vendo este video em 3D!
 
-<iframe className="items-center" width="1086" height="600" src="https://www.youtube.com/embed/IZdWlXjhMo4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="380" src="https://www.youtube.com/embed/IZdWlXjhMo4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Você viu o efeito 3D? Talvez não funcionou bem em algumas partes do video e em algumas você nem deve ter notado o efeito 3D por completo. Tudo bem, esse post não é sobre 3D, mas _é_ sobre a razão pela qual você pode ver aquele video em 3D com apenas um par de óculos de sol: o efeito de Pulfrich.
 
