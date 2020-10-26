@@ -12,6 +12,7 @@ export default function Footer() {
           <Link href="https://twitter.com/tongedev"> Twitter </Link>—
           <Link href="https://instagram.com/tomb.dev"> Instagram </Link>—
           <Link href="https://dev.to/tombenevides"> Dev.to </Link>—
+          <Link href="https://patreon.com/tombenevides"> Patreon </Link>—
           <Link href="https://github.com/tombenevides"> Github </Link>
         </p>
       </div>
