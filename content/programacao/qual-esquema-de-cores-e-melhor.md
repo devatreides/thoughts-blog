@@ -4,7 +4,7 @@ title: Qual esquema de cores é melhor?
 description: Ou por que temas claros são melhores de acordo com a ciência.
 author: Tom Benevides
 avatar: tom-benevides.jpg
-date: 27 de Outubro de 2020
+date: 26 de Outubro de 2020
 contact: https://twitter.com/tongedev
 dateOrder: 2020-10-26
 typeArticle: translate
