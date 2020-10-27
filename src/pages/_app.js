@@ -1,5 +1,7 @@
 import Router from 'next/router';
 import NProgress from 'nprogress';
+import TagManager from 'react-gtm-module';
+import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 
 import 'nprogress/nprogress.css';
@@ -12,6 +14,13 @@ Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: 'G-MF6DWZ34BL'
+    };
+    TagManager.initialize(tagManagerArgs);
+  }, []);
+
   return (
     <>
       <Component {...pageProps} />
