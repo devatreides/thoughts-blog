@@ -16,7 +16,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const tagManagerArgs = {
-      gtmId: 'G-MF6DWZ34BL'
+      gtmId: 'GTM-NKQNFP2'
     };
     TagManager.initialize(tagManagerArgs);
   }, []);
