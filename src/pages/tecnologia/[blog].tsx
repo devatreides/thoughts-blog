@@ -65,7 +65,7 @@ const Blog = ({ content, data }) => {
                     Traduzido por {frontmatter.author} em {frontmatter.date}
                   </h3>
                   <h3 className="text-lg font-bold text-black mb-6 md:text-sm lg:text-sm">
-                    Escrito originalmente por {frontmatter.originalAuthor}.Para
+                    Escrito originalmente por {frontmatter.originalAuthor}. Para
                     acessar o artigo original,{' '}
                     <a
                       rel="noreferrer"
