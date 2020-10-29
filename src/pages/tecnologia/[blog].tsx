@@ -8,11 +8,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const CodeBlock = ({ language, value }) => {
-  return (
-    <SyntaxHighlighter showLineNumbers={true} language={language}>
-      {value}
-    </SyntaxHighlighter>
-  );
+  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
 };
 
 const flatten = (text: string, child) => {
