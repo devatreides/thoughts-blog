@@ -69,7 +69,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Blog - cogitare.press',
-      description: 'A simple blog to share knowledge'
+      description: 'Um simples blog para compartilhar conhecimento'
     }
   };
 }

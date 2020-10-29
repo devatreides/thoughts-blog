@@ -35,6 +35,7 @@ const Blog = ({ content, data }) => {
   return (
     <>
       <Head>
+        <meta name="Description" content={data.description}></meta>
         <title>{data.title}</title>
         {frontmatter.typeArticle === 'translate' ? (
           <link
@@ -51,8 +52,8 @@ const Blog = ({ content, data }) => {
             <div className="flex flex-col items-center">
               <img
                 alt="thumb-article"
-                src={`/img/content/tecnologia/${frontmatter.slug}/thumb.png`}
-                width="700"
+                src={`/img/content/tecnologia/${frontmatter.slug}/${frontmatter.thumbnail}`}
+                width="45%"
               />
             </div>
             <h1 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">

@@ -23,11 +23,11 @@ const Reflexoes = ({ data, title }) => {
         <meta charSet="utf-8" />
         <title>{title}</title>
       </Head>
-      <Navbar hrefReturn="/" articleMetaData={{ title: 'Reflexões' }} />
+      <Navbar hrefReturn="/" articleMetaData={{ title: title }} />
       <div className="flex flex-col justify-between py-16">
         <div className="py-5 px-2">
           <h1 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">
-            Reflexões
+            Outros assuntos legais
           </h1>
           {ListItems.map((blog, i) => (
             <div
@@ -37,7 +37,7 @@ const Reflexoes = ({ data, title }) => {
               <div
                 className="w-full md:w-1/4 h-40 rounded md:rounded"
                 style={{
-                  backgroundImage: `url('/images/image.png')`,
+                  backgroundImage: `url('/img/content/geral/${blog.slug}/thumb.png')`,
                   backgroundSize: 'cover'
                 }}
               ></div>
@@ -46,7 +46,7 @@ const Reflexoes = ({ data, title }) => {
               <div className="md:w-3/5 p-4 md:h-40">
                 <div className="mb-8">
                   <div className="text-accent-1 font-bold text-xl mb-2">
-                    <Link href={`/reflexoes/${blog.slug}`}>{blog.title}</Link>
+                    <Link href={`/geral/${blog.slug}`}>{blog.title}</Link>
                   </div>
                   <p className="text-accent-1-darker text-base">
                     {blog.description}
@@ -55,7 +55,7 @@ const Reflexoes = ({ data, title }) => {
                 <div className="flex items-center">
                   <img
                     className="w-10 h-10 rounded-full mr-4"
-                    src="/avatar/profile.jpg"
+                    src={`/img/avatar/${blog.avatar}`}
                     alt="Avatar of Tom Benevides"
                   />
                   <div className="text-sm">
