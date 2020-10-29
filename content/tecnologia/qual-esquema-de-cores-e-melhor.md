@@ -2,6 +2,7 @@
 slug: qual-esquema-de-cores-e-melhor
 title: Qual esquema de cores é melhor?
 description: Ou por que temas claros são melhores de acordo com a ciência.
+thumbnail: thumb.png
 author: Tom Benevides
 avatar: tom-benevides.jpg
 date: 26 de Outubro de 2020

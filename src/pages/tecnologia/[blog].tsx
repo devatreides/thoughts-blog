@@ -8,11 +8,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const CodeBlock = ({ language, value }) => {
-  return (
-    <SyntaxHighlighter showLineNumbers={true} language={language}>
-      {value}
-    </SyntaxHighlighter>
-  );
+  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
 };
 
 const flatten = (text: string, child) => {
@@ -35,12 +31,27 @@ const Blog = ({ content, data }) => {
   return (
     <>
       <Head>
+        <meta name="Description" content={data.description}></meta>
         <title>{data.title}</title>
+        {frontmatter.typeArticle === 'translate' ? (
+          <link
+            rel="alternate"
+            hrefLang="en"
+            href={frontmatter.originalArticle}
+          />
+        ) : null}
       </Head>
-      <Navbar hrefReturn="/games" articleMetaData={data} />
-      <div className="flex flex-col justify-between py-8">
-        <div className="py-10 px-2">
+      <Navbar hrefReturn="/tecnologia" articleMetaData={data} />
+      <div className="flex flex-col justify-between pb-8">
+        <div className="pb-20 px-2">
           <div className="mx-auto max-w-6xl px-8 border border-gray border-opacity-75 rounded-md shadow-md pt-6 pb-8 mb-4">
+            <div className="flex flex-col items-center">
+              <img
+                alt="thumb-article"
+                src={`/img/content/tecnologia/${frontmatter.slug}/${frontmatter.thumbnail}`}
+                width="45%"
+              />
+            </div>
             <h1 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">
               {frontmatter.title}
             </h1>
@@ -72,6 +83,7 @@ const Blog = ({ content, data }) => {
             </div>
             <article className="prose prose-lg max-w-none">
               <ReactMarkdown
+                escapeHtml={false}
                 plugins={[gfm]}
                 source={content}
                 renderers={{ code: CodeBlock, heading: HeadingRenderer }}
@@ -90,7 +102,7 @@ export default Blog;
 Blog.getInitialProps = async (context) => {
   const { blog } = context.query;
   // Import our .md file using the `slug` from the URL
-  const content = await import(`../../../content/games/${blog}.md`);
+  const content = await import(`../../../content/tecnologia/${blog}.md`);
   const data = matter(content.default);
   return { ...data };
 };

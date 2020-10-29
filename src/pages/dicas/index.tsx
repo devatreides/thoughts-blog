@@ -23,7 +23,7 @@ const Programacao = ({ data, title }) => {
         <meta charSet="utf-8" />
         <title>{title}</title>
       </Head>
-      <Navbar hrefReturn="/" articleMetaData={{ title: 'Dicas' }} />
+      <Navbar hrefReturn="/" articleMetaData={{ title: title }} />
       <div className="flex flex-col justify-between py-16">
         <div className="py-5 px-2">
           <h1 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">
@@ -37,7 +37,7 @@ const Programacao = ({ data, title }) => {
               <div
                 className="w-full md:w-1/4 h-40 rounded md:rounded"
                 style={{
-                  backgroundImage: `url('/images/image.png')`,
+                  backgroundImage: `url('/img/content/dicas/${blog.slug}/thumb.png')`,
                   backgroundSize: 'cover'
                 }}
               ></div>
@@ -55,7 +55,7 @@ const Programacao = ({ data, title }) => {
                 <div className="flex items-center">
                   <img
                     className="w-10 h-10 rounded-full mr-4"
-                    src="/avatar/profile.jpg"
+                    src={`/img/avatar/${blog.avatar}`}
                     alt="Avatar of Tom Benevides"
                   />
                   <div className="text-sm">

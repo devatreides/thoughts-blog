@@ -33,10 +33,10 @@ const Index = ({ title, description }) => {
             <div className="w-full text-center mx-auto">
               <button
                 type="button"
-                onClick={() => router.push('/programacao')}
+                onClick={() => router.push('/tecnologia')}
                 className="border border-accent-1 bg-accent-1 text-white text-xl text-bold rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-accent-1-darker focus:outline-none focus:shadow-outline"
               >
-                Programação
+                Tecnologia
               </button>
               <button
                 type="button"
@@ -48,19 +48,11 @@ const Index = ({ title, description }) => {
               </button>
               <button
                 type="button"
-                // onClick={() => router.push('/games')}
-                // className="border border-accent-1 bg-accent-1 text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-accent-1-darker focus:outline-none focus:shadow-outline"
-                className="border border-gray bg-gray text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
-              >
-                Games
-              </button>
-              <button
-                type="button"
                 // onClick={() => router.push('/reflexoes')}
                 // className="border border-accent-1 bg-accent-1 text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-accent-1-darker focus:outline-none focus:shadow-outline"
                 className="border border-gray bg-gray text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
               >
-                Reflexões
+                Outros assuntos legais
               </button>
             </div>
           </div>
@@ -77,7 +69,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Blog - cogitare.press',
-      description: 'A simple blog to share knowledge'
+      description: 'Um simples blog para compartilhar conhecimento'
     }
   };
 }
