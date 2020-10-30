@@ -20,7 +20,7 @@ Eu, assim como muitos dos cidadãos da cidade que vivem dentro de um armário ab
 
 Eu vou explicar a você como eu estou recebendo essas comidas grátis de alguns dos melhores restaurantes em Nova York. Eu vou admitir, é bastante técnico e nem todo mundo pode reproduzir minha metodologia. Você também vai precisar de um conhecimento básico em Ciência de Dados/Desenvolvimento de software ou **muito** tempo livre em mãos. Já que eu tenho o citado anteriormente, eu relaxo e deixo meu código fazer o trabalho por mim. Oh, e você adivinhou, também precisará saber como usar o Instagram.
 
-Se você é parte do público técnico, Eu vou abordar brevemente algumas das tecnologias e linguagens de programação que uso mas eu não vou fornecer nenhum código ou qualquer coisa assim. Eu vou explicar meu uso da regressão logística, florestas aleatórias (random forests), AWS e automação — mas não a fundo. Esse artigo será mais focado em teoria. Se você é um leitor leigo em programação, tudo aqui ainda pode ser feito, só vai levar um certo tempo e esforço. Esses métodos são tediosos e é por isso que decidi automatizar a maior parte deles.
+Se você é parte do público técnico, eu vou abordar brevemente algumas das tecnologias e linguagens de programação que uso mas eu não vou fornecer nenhum código ou qualquer coisa assim. Eu vou explicar meu uso da regressão logística, florestas aleatórias (random forests), AWS e automação — mas não a fundo. Esse artigo será mais focado em teoria. Se você é um leitor leigo em programação, tudo aqui ainda pode ser feito, só vai levar um certo tempo e esforço. Esses métodos são tediosos e é por isso que decidi automatizar a maior parte deles.
 
 Agora para entrarmos no assunto, eu vou começar com a resposta e depois vou para como eu cheguei lá.
 
@@ -28,7 +28,7 @@ Agora para entrarmos no assunto, eu vou começar com a resposta e depois vou par
 
 Na era digital atual, um grande público no Instagram é considerado uma moeda valiosa. Eu também tinha escutado boatos de que poderia monetizar um grande número de seguidores — ou no meu caso — usá-los para pagar minhas refeições. *Então fiz exatamente isso*.
 
-Eu criei uma página no instagram que exibia fotos de Nova York  como skylines (panoramas), lugares icônicos, arranha-céus elegantes — o que quer que você diga. A página acumulou mais de 25 mil seguidores na área de Nova York e continua crescendo rapidamente.
+Eu criei uma página no instagram que exibia fotos de Nova York  como skylines (panoramas), lugares icônicos, arranha-céus elegantes — o que quer que você diga. A página acumulou mais de 25 mil seguidores na região de Nova York e continua crescendo rapidamente.
 
 <p align="center">
   <img width="40%" height="auto" src="/img/content/tecnologia/como-eu-consigo-comida-de-graca-em-nyc-usando-python-automacao-ia-e-instagram/instagram-page.png">
@@ -54,13 +54,13 @@ Eu primeiro pensei em configurar um extrator de imagens do Google Images ou Redd
 
 Por fim, eu decidi extrair diretamente de outros feeds no Instagram porque a foto viria precisamente na proporção exigida. Isso também me permitiu conhecer exatamente de onde a foto veio, o que será útil no processo de auto-creditação.
 
-Eu coletei uma lista de cinquenta outras contas de Instagram que postavam fotos com qualidade de Nova York. Então eu configurei o extrator para ir até as contas e baixar o conteúdo delas. Junto com o atual conteúdo, eu extrai um monte de metadados que vieram com a foto como legenda, número de curtidas e localização. Eu configurei o extrator para rodar todo dia as 03:00 horas ou quando meu inventário estivesse vazio.
+Eu coletei uma lista de cinquenta outras contas de Instagram que postavam fotos (com qualidade) de Nova York. Então eu configurei o extrator para ir até as contas e baixar o conteúdo delas. Junto com o atual conteúdo, eu extrai um monte de metadados que vieram com a foto como legenda, número de curtidas e localização. Eu configurei o extrator para rodar todo dia as 03:00 horas ou quando meu inventário estivesse vazio.
 
 Com isso, eu agora tenho um local central com conteúdo relacionado no formato correto.
 
 - **Decidindo automaticamente qual conteúdo é "bom" ou "ruim"**
 
-Nem todos os posts de todo mundo são "re-compartilháveis". A todo o tempo, pessoas estão tentando vender alguma coisa, atingir outra página ou só pode ser apenas um conteúdo ruim ou não relacionado. Pegue esse dois posts como exempo:
+Nem todos os posts de todo mundo são "re-compartilháveis". A todo o tempo, pessoas estão tentando vender alguma coisa, atingir outra página ou pode ser apenas um conteúdo ruim ou não relacionado. Pegue esse dois posts como exempo:
 
 <p align="center">
   <img width="40%" height="auto" src="/img/content/tecnologia/como-eu-consigo-comida-de-graca-em-nyc-usando-python-automacao-ia-e-instagram/post-examples.png">
@@ -242,7 +242,7 @@ A questão aqui é que você não pode simplesmente seguir quantos quiser no Ins
 
 Eu gastei alguns minutos manualmente recolhendo as 20 maiores contas no mesmo nicho que eu. Eu não tinha nenhum dado inicial, então nas primeiras semanas eu faria essas ações manualmente para aumentar meus seguidores, mas o mais importante, eu precisava capturar tantos metadados quanto possível para então poder fazer meu modelo.
 
-Eu percorri mais de 20 contas relacionadas e segui os usuários que seguiam essas contas, curtiam suas fotos ou comentavam em seus posts. Com cada follow, eu capturava o máximo de metadados que podia sobre o usuário em um arquivo SVG. Alguns desses metadados incluíam a razão do número de pessoas que a conta seguia/seguidores, se era uma conta pública ou privada ou se tinha foto de perfil ou não. Todo dia, meu script percorria esse SVG e rotulava a variável de resposta, que era se os usuários seguiram de volta ou não. Eu dei a cada usuário dois dias inteiros antes de rotulá-lo(a) com 0, 1 ou 2 — 2 sendo o resultado mais desejado. 0 indicava que o usuário não seguiu de volta, 1 indicava que fui seguido de volta mas o usuário não interagiu nos meus 10 últimos posts (curtir ou comentar) e 2 indicava que fui seguido de volta e o usuário interagiu nos meus últimos posts. Meu conjunto de dados parecia algo assim:
+Eu percorri mais de 20 contas relacionadas e segui os usuários que seguiam essas contas, curtiam suas fotos ou comentavam em seus posts. Com cada follow, eu capturava o máximo de metadados que podia sobre o usuário em um arquivo CSV. Alguns desses metadados incluíam a razão do número de pessoas que a conta seguia/seguidores, se era uma conta pública ou privada ou se tinha foto de perfil ou não. Todo dia, meu script percorria esse CSV e rotulava a variável de resposta, que era se os usuários seguiram de volta ou não. Eu dei a cada usuário dois dias inteiros antes de rotulá-lo(a) com 0, 1 ou 2 — 2 sendo o resultado mais desejado. 0 indicava que o usuário não seguiu de volta, 1 indicava que fui seguido de volta mas o usuário não interagiu nos meus 10 últimos posts (curtir ou comentar) e 2 indicava que fui seguido de volta e o usuário interagiu nos meus últimos posts. Meu conjunto de dados parecia algo assim:
 
 ```
 Variável de resposta:
