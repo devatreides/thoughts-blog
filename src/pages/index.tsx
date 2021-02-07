@@ -40,9 +40,9 @@ const Index = ({ title, description }) => {
               </button>
               <button
                 type="button"
-                // onClick={() => router.push('/dicas')}
-                // className="border border-accent-1 bg-accent-1 text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-accent-1-darker focus:outline-none focus:shadow-outline"
-                className="border border-gray bg-gray text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+                onClick={() => router.push('/dicas')}
+                className="border border-accent-1 bg-accent-1 text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-accent-1-darker focus:outline-none focus:shadow-outline"
+                // className="border border-gray bg-gray text-white text-xl rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
               >
                 Dicas
               </button>
