@@ -379,4 +379,4 @@ Espero que isso ajude a inspirar alguma criatividade quando se trata de mídia s
 
 ***
 
-> Se você tem algum projeto legal de automação, me conta aí sua experiência via via [Twitter](https://twitter.com/tongedev) or [e-mail](mailto:tombenevides58@gmail.com)!
+> Se você tem algum projeto legal de automação, me conta aí sua experiência via via [Twitter](https://twitter.com/tongedev) ou [e-mail](mailto:tombenevides58@gmail.com)!

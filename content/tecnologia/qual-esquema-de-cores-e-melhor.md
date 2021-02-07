@@ -59,7 +59,7 @@ No entanto, eu não quero terminar com teoria. Nos últimos 3 anos, eu tenho col
 
 Agora, eu reconheço que _existem_ pessoas que não conseguem usar esquemas de cor clara por causa de alguma enfermidade nos olhos. Esses são casos legítimos onde esquemas de cor escura _são_ melhores para saúde de algumas pessoas, as exceções à regra.
 
-Então, tente aí e depois me conte suas descobertas via [Twitter](*https://twitter.com/tongedev) or [e-mail](mailto:tombenevides58@gmail.com)!
+Então, tente aí e depois me conte suas descobertas via [Twitter](*https://twitter.com/tongedev) ou [e-mail](mailto:tombenevides58@gmail.com)!
 
 ***
 
