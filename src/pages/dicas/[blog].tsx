@@ -37,9 +37,16 @@ const Blog = ({ content, data }) => {
         <title>{data.title}</title>
       </Head>
       <Navbar hrefReturn="/dicas" articleMetaData={data} />
-      <div className="flex flex-col justify-between py-8">
-        <div className="py-10 px-2">
+      <div className="flex flex-col justify-between pb-8">
+        <div className="pb-20 px-2">
           <div className="mx-auto max-w-6xl px-8 border border-gray border-opacity-75 rounded-md shadow-md pt-6 pb-8 mb-4">
+            <div className="flex flex-col items-center">
+              <img
+                alt="thumb-article"
+                src={`/img/content/dicas/${frontmatter.slug}/${frontmatter.thumbnail}`}
+                width="45%"
+              />
+            </div>
             <h1 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">
               {frontmatter.title}
             </h1>
@@ -53,7 +60,8 @@ const Blog = ({ content, data }) => {
                     Traduzido por {frontmatter.author} em {frontmatter.date}
                   </h3>
                   <h3 className="text-lg font-bold text-black mb-6 md:text-sm lg:text-sm">
-                    Para acessar o artigo original,{' '}
+                    Escrito originalmente por {frontmatter.originalAuthor}. Para
+                    acessar o artigo original,{' '}
                     <a
                       rel="noreferrer"
                       target="_blank"
@@ -71,6 +79,7 @@ const Blog = ({ content, data }) => {
             </div>
             <article className="prose prose-lg max-w-none">
               <ReactMarkdown
+                escapeHtml={false}
                 plugins={[gfm]}
                 source={content}
                 renderers={{ code: CodeBlock, heading: HeadingRenderer }}
