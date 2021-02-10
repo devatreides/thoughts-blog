@@ -1,10 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import fs from 'fs';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import MetaData from '../../components/MetaData';
 
 const Programacao = ({ data, title }) => {
   const RealData = data.map((blog) => matter(blog));
@@ -18,11 +18,7 @@ const Programacao = ({ data, title }) => {
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <title>{title}</title>
-      </Head>
+      <MetaData title={title} />
       <Navbar hrefReturn="/" articleMetaData={{ title: title }} />
       <div className="flex flex-col justify-between py-16">
         <div className="py-5 px-2">

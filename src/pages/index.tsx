@@ -1,20 +1,15 @@
 import { useRouter } from 'next/router';
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
+import MetaData from '../components/MetaData';
 
 const Index = ({ title, description }) => {
   const router = useRouter();
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="Description" content={description}></meta>
-        <title>{title}</title>
-      </Head>
+      <MetaData title={title} description={description} />
       <div className="flex justify-center pt-4">
         <p className="text-lg text-bold text-accent-1 text-bold">
           <Link href="https://twitter.com/tongedev"> Twitter </Link>—

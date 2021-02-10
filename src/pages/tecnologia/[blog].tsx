@@ -1,11 +1,11 @@
 import React from 'react';
-import Head from 'next/head';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import gfm from 'remark-gfm';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import MetaData from '../../components/MetaData';
 
 const CodeBlock = ({ language, value }) => {
   return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
@@ -30,17 +30,11 @@ const Blog = ({ content, data }) => {
   console.log(frontmatter);
   return (
     <>
-      <Head>
-        <meta name="Description" content={data.description}></meta>
-        <title>{data.title}</title>
-        {frontmatter.typeArticle === 'translate' ? (
-          <link
-            rel="alternate"
-            hrefLang="en"
-            href={frontmatter.originalArticle}
-          />
-        ) : null}
-      </Head>
+      <MetaData
+        title={data.title}
+        description={data.description}
+        frontmatter={frontmatter}
+      />
       <Navbar hrefReturn="/tecnologia" articleMetaData={data} />
       <div className="flex flex-col justify-between pb-8">
         <div className="pb-20 px-2">

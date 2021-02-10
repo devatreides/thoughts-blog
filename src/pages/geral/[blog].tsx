@@ -1,11 +1,11 @@
 import React from 'react';
-import Head from 'next/head';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import gfm from 'remark-gfm';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import MetaData from '../../components/MetaData';
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -34,9 +34,11 @@ const Blog = ({ content, data }) => {
   console.log(frontmatter);
   return (
     <>
-      <Head>
-        <title>{data.title}</title>
-      </Head>
+      <MetaData
+        title={data.title}
+        description={data.description}
+        frontmatter={frontmatter}
+      />
       <Navbar hrefReturn="/geral" articleMetaData={data} />
       <div className="flex flex-col justify-between py-8">
         <div className="py-10 px-2">
