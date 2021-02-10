@@ -17,7 +17,7 @@ export default function MetaData({
       />
       <meta name="Description" content={description}></meta>
       <title>{title}</title>
-      {frontmatter.typeArticle === 'translate' ? (
+      {frontmatter?.typeArticle === 'translate' ? (
         <link
           rel="alternate"
           hrefLang="en"
