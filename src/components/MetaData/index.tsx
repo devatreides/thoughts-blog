@@ -10,11 +10,6 @@ export default function MetaData({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <meta name="robots" content="index, follow" />
-      <script
-        data-ad-client="ca-pub-7826067101448928"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      />
       <meta name="Description" content={description}></meta>
       <title>{title}</title>
       {frontmatter?.typeArticle === 'translate' ? (
