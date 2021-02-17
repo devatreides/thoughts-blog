@@ -10,7 +10,14 @@ export default function MetaData({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <meta name="robots" content="index, follow" />
-      <meta name="Description" content={description}></meta>
+      {frontmatter?.slug && frontmatter?.thumbnail ? (
+        <meta
+          property="og:image"
+          content={`/img/content/tecnologia/${frontmatter.slug}/${frontmatter.thumbnail}`}
+        />
+      ) : null}
+      <meta name="og:title" content={title}></meta>
+      <meta name="og:description" content={description}></meta>
       <title>{title}</title>
       {frontmatter?.typeArticle === 'translate' ? (
         <link

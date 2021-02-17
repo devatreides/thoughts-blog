@@ -1,0 +1,13 @@
+version: '3'
+services:
+    nextjs:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        ports:
+            - '3010:3000'
+        container_name: blog-node
+        stdin_open: true
+        volumes:
+            - './:/usr/src/app'
+            - './node_modules:/usr/src/app/node_modules'
