@@ -39,8 +39,8 @@ const Programacao = ({ data, title }) => {
               ></div>
               <div className="card-rounded-detail w-full md:hidden"></div>
 
-              <div className="md:w-3/5 p-4 md:h-40">
-                <div className="mb-8">
+              <div className="md:w-3/5 p-4">
+                <div className="mb-5">
                   <div className="text-accent-1 font-bold text-xl mb-2">
                     <Link href={`/dicas/${blog.slug}`}>{blog.title}</Link>
                   </div>

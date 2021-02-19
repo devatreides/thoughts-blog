@@ -11,11 +11,16 @@ export default function MetaData({
       <meta charSet="utf-8" />
       <meta name="robots" content="index, follow" />
       {frontmatter?.slug && frontmatter?.thumbnail ? (
-        <meta
-          property="og:image"
-          content={`/img/content/tecnologia/${frontmatter.slug}/${frontmatter.thumbnail}`}
-        />
-      ) : null}
+        <>
+          <meta property="og:type" content="article" />
+          <meta
+            property="og:image"
+            content={`/img/content/tecnologia/${frontmatter.slug}/${frontmatter.thumbnail}`}
+          />
+        </>
+      ) : (
+        <meta property="og:type" content="website" />
+      )}
       <meta name="og:title" content={title}></meta>
       <meta name="og:description" content={description}></meta>
       <title>{title}</title>

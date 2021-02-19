@@ -31,7 +31,7 @@ const Programacao = ({ data, title }) => {
               className="bg-gray-lighter mx-auto my-4 py-2 rounded shadow-lg flex flex-wrap items-start lg:w-3/5"
             >
               <div
-                className="w-full md:w-1/4 h-48 rounded md:rounded"
+                className="w-full md:w-1/4 h-40 rounded md:rounded"
                 style={{
                   backgroundImage: `url('/img/content/tecnologia/${blog.slug}/${blog.thumbnail}')`,
                   backgroundSize: 'cover'
@@ -39,8 +39,8 @@ const Programacao = ({ data, title }) => {
               ></div>
               <div className="card-rounded-detail w-full md:hidden"></div>
 
-              <div className="md:w-3/5 p-4 md:h-48">
-                <div className="mb-8">
+              <div className="md:w-3/5 p-4">
+                <div className="mb-5">
                   <div className="text-accent-1 font-bold text-xl mb-2">
                     <Link href={`/tecnologia/${blog.slug}`}>{blog.title}</Link>
                   </div>
