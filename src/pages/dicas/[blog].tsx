@@ -49,19 +49,19 @@ const Blog = ({ content, data }) => {
                 width="45%"
               />
             </div>
-            <h1 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">
+            <h1 className="text-center text-3xl font-bold text-accent-1 mb-6 md:text-4xl lg:text-5xl">
               {frontmatter.title}
             </h1>
-            <h3 className="text-center text-2xl font-bold text-accent-1 mb-6 md:text-2xl lg:text-3xl">
+            <h3 className="text-center text-xl font-bold text-accent-1 mb-6 md:text-2xl lg:text-3xl">
               {frontmatter.description}
             </h3>
             <div className="border-gray shadow-lg">
               {frontmatter.typeArticle === 'translate' ? (
                 <>
-                  <h3 className="text-lg font-bold text-black md:text-sm lg:text-sm">
+                  <h3 className="text-sm font-bold text-black md:text-sm lg:text-sm">
                     Traduzido por {frontmatter.author} em {frontmatter.date}
                   </h3>
-                  <h3 className="text-lg font-bold text-black mb-6 md:text-sm lg:text-sm">
+                  <h3 className="text-sm font-bold text-black mb-6 md:text-sm lg:text-sm">
                     Escrito originalmente por {frontmatter.originalAuthor}. Para
                     acessar o artigo original,{' '}
                     <a
