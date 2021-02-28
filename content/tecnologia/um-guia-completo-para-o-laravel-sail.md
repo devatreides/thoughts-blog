@@ -43,7 +43,7 @@ Valet, por sua vez, é um ambiente leve para MacOS focado em performance, depend
 
 Enquanto Homestead e Valet parecem diferentes no papel, promovem a mesma abordagem geral para ambientes locais, que é também compartilhada com a maior parte das soluções já mencionadas: eles tentam ser ambientes "engloba-tudo" para projetos Laravel e gerenciá-los sob o mesmo teto.
 
-A abordagem do Sail é diferente, em que a descrição do ambiente de desenvolvimento é inslusa com o resto do código. Em vez de depender de uma solução de terceiros na máquina do desenvolvedor, o projeto vem com um conjunto de instruções Docker, para pegar e construir o ambiente correspondente.
+A abordagem do Sail é diferente, em que a descrição do ambiente de desenvolvimento é inclusa com o resto do código. Em vez de depender de uma solução de terceiros na máquina do desenvolvedor, o projeto vem com um conjunto de instruções Docker, para pegar e construir o ambiente correspondente.
 
 A aplicação vem com baterias inclusas, exigindo somente um único comando para rodar o ambiente de desenvolvimento, independente do S.O. do desenvolvedor desde que o Docker esteja instalado. Também introduz a noção de um ambiente de desenvolvimento sob medida, o que, na minha opinião, é a real marca do Laravel Sail.
 
